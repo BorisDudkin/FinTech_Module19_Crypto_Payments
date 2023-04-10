@@ -1,0 +1,5 @@
+* 	 (HEAD -> main) requirements.txt added, readme.md completed
+* 	 (origin/main, origin/HEAD) video added. images updated
+* 	 fintech_finder and crypto wallet updated, screenshots added to images
+* 	 initial commit
+* 	 Initial commit
