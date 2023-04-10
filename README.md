@@ -131,16 +131,16 @@ To install and initiate Ganache:
 
 > Application summary<br/>
 
-- View ETH account and available ETH balance:<br/>
+- View ETH address and available ETH balance:<br/>
   Before making a payment, the users can view an ETH balance available on their ETH address, from which the payment will be made.<br/>
 
 - Select a person to make a payment to:<br/>
 
-  An overview of the employees is provided on the main page and a functionality to chose an individual, to whom the ETH will be transfered, is provided on the sidebar of the application. Once the employee is selected, the user can insert an amount of hours corresponding to the time of service provided by the selected employee. The amount of transfer to be made is calculated based on the hourly wages of the employee and the hours of service and is displayed under the _Total Wages in Ether_<br/>
+  An overview of the employees is provided on the main page and a functionality to choose an individual, to whom the ETH will be transfered, is provided on the sidebar of the application. Once the employee is selected, the user can insert an amount of hours corresponding to the time of service provided by the selected employee. The amount of transfer to be made is calculated based on the hourly wages of the employee and the hours of service and is displayed under the _Total Wages in Ether_<br/>
 
 - Sending a transaction:<br/>
   Once all the information above becomes available, the user can send the transaction. The validated transaction hash will be presented once the payment is made:<br/>
-  ![screen](Images/screen.jpg)<br/>
+  ![screen](Images/screen.JPG)<br/>
 
 - Viewing the transaction on the Ganache interface:<br/>
   When in Ganache, the user can:<br/>
