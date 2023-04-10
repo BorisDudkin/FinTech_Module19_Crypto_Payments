@@ -6,12 +6,13 @@
 ################################################################################
 # Imports
 import os
+
 import requests
 from dotenv import load_dotenv
+
 load_dotenv()
 from bip44 import Wallet
-from web3 import Account
-from web3 import middleware
+from web3 import Account, middleware
 from web3.gas_strategies.time_based import medium_gas_price_strategy
 
 ################################################################################
@@ -23,7 +24,7 @@ def generate_account():
     mnemonic = os.getenv("MNEMONIC")
 
     # Create Wallet Object
-    wallet = Wallet(mnemonic)
+    wallet =wallet = Wallet(mnemonic)
 
     # Derive Ethereum Private Key
     private, public = wallet.derive_account("eth")
@@ -36,7 +37,7 @@ def generate_account():
 def get_balance(w3, address):
     """Using an Ethereum account address access the balance of Ether"""
     # Get balance of address in Wei
-    wei_balance = w3.eth.get_balance(address)
+    wei_balance = w3.eth.getBalance(address)
 
     # Convert Wei value to ether
     ether = w3.fromWei(wei_balance, "ether")
@@ -62,7 +63,7 @@ def send_transaction(w3, account, to, wage):
         "from": account.address,
         "value": value,
         "gas": gasEstimate,
-        "gasPrice": 0,
+        "gasPrice": 20000000000,
         "nonce": w3.eth.getTransactionCount(account.address)
     }
 
