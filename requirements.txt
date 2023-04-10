@@ -1,0 +1,6 @@
+bip44
+python-dotenv
+requests
+streamlit
+web3==5.17.0
+mnemonic
